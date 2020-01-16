@@ -1,0 +1,494 @@
+@import 'reset.scss';
+
+@mixin flexy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*{
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+.main {
+	opacity: 0;
+} 
+.bar {
+	position: sticky;
+	height: 80px;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	background: black;
+	width: 100%;
+	z-index: 100;
+}
+.logo {
+	font-size: 18px;
+	margin-left: 5%;
+	font-weight: bold;
+	color: #fff;
+}
+.guzik {
+	display: none;
+	position: absolute;
+	right: 20px;
+	span {
+		display: block;
+		margin: 6px;
+		width: 40px;
+		height: 3px;
+		background: #fff;
+	}
+}
+.guzik:hover > span {
+	background: #fd7e14;
+}
+.menu {
+	position: absolute;
+	right: 5%;
+	a {
+		color: #fff;
+		text-decoration: none;
+		margin-left: 20px;
+		font-size: 18px;
+		text-transform: uppercase;
+		&:hover {
+			color: #fd7e14;
+			text-decoration: none;
+			transform: scale(1.4);
+			transition: 0.5s;
+		}
+	}
+}
+#person {
+	background: url('../images/comp.jpg') no-repeat center center / cover fixed;
+	color: #fff;
+	position: relative;
+	height: 90vh;
+}
+#person:after {
+	content:"";
+	height: 100%;
+	width: 100%;
+	background: black;
+	opacity: 0.8;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.my {
+	position: relative;
+	z-index: 2;
+	text-align: center;
+}
+.name {
+	position: relative;
+	top: 150px;
+	font-size: 85px;
+	font-weight: bold;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.job {
+	position: relative;
+	top: 150px;
+	color: #fd7e14;
+	font-size: 24px;
+	letter-spacing: 2;
+}
+.cv {
+	position: relative;
+	top: 220px
+}
+#click {
+	position: relative;
+	top: 220px;
+	width: 200px;
+	height: 50px;
+	border-radius: 20px !important;
+	background: #fff;
+	border: none;
+}
+#click:hover {
+	background: #fd7e14;
+}
+#click:hover a {
+	color: #fff !important;
+}
+#click a {
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+}
+#click a:hover {
+	color: #fff !important;
+	text-decoration: none;
+}
+#click:active, #click:focus {
+	border: none !important;
+	outline: none !important;
+}
+
+//================================== projekty
+
+#projects {
+	background: #0E0E0E;
+	padding-bottom: 100px;
+	padding-top: 50px;
+	.container {
+		margin-top: 60px;
+	}
+	.title {
+		color: #fff;
+		margin-bottom: 60px !important;
+	}
+	.pocket:hover .layer {
+		opacity: 0.9;
+	}
+	.pocket {
+		position: relative;
+		margin: 0 auto;
+	}
+	.layer {
+		@include flexy;
+		position: absolute;
+		background: black;
+		opacity: 0;
+		width: 100%;
+		flex-direction: column;
+		font-size: 30px;
+		color: #fff;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		-webkit-box-shadow: 0px 0px 41px 11px rgba(255,255,255,0.75);
+		-moz-box-shadow: 0px 0px 41px 11px rgba(255,255,255,0.75);
+		box-shadow: 0px 0px 41px 11px rgba(255,255,255,0.75);
+		.on-img {
+			background: transparent;
+			text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #fd7e14, 0 0 30px #fd7e14, 0 0 40px #fd7e14, 0 0 55px #fd7e14, 0 0 75px #fd7e14;
+		}
+		.tech {
+			font-size: 12px;
+		}
+	}
+}
+//============================== about me
+
+#about-me {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	.col--sm-6 {
+		margin-top: 60px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.black {
+		font-size: 50px;
+		text-align: center;
+		font-size: 50px;
+		font-weight: bold;
+		font-style: italic;
+	}
+	.package {
+		@include flexy;
+		flex-direction: column;
+		padding: 5px;
+		i {
+			font-size: 80px;
+			margin-bottom: 40px;
+			color: #fd7e14;
+		}
+	}
+	img {
+		width: 350px;
+		height: 300px;
+		border-radius: 50%;
+		margin: 50px auto;
+	}
+	.desc {
+		font-weight: 600;
+		font-size: 20px;
+		text-align: left;
+	}
+	.border {
+		border-left: 2px solid black;
+	}
+}
+// ========================= skills
+#skills {
+	padding-bottom: 50px;
+	p {
+		color: black !important;
+	}
+	/*background-image: url('../images/tlo.jpeg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; */
+}
+.skill {
+	@include flexy;
+	margin-bottom: 20px;
+	span {
+		margin-left: 40px;
+		margin-right: 40px;
+		p {
+			font-style: italic;
+		}
+	}
+	i {
+		font-size: 70px;
+		margin-bottom: 20px;
+	}
+}
+h2 {
+	margin-bottom: 40px !important;
+	color: #fd7e14;
+}
+
+//============================ contact
+#contact {
+	background: url('../images/tlo.jpg') no-repeat center center / cover;
+	z-index: 2;
+	position: relative;
+	padding-top: 100px;
+	.col {
+		z-index: 2 !important;
+	}
+}
+#contact:after {
+	content:"";
+	height: 100%;
+	width: 100%;
+	background: black;
+	opacity: 0.4;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.title {
+	color: #fff !important;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	margin-top: 50px !important;
+	margin-bottom: 60px;
+	font-style: italic;
+}
+.what {
+	font-size: 25px;
+	text-align: left;
+	color: #fff;
+	margin-left: 10%;
+}
+input {
+	padding-left: 15px;
+	height: 35px;
+}
+input, textarea {
+	width: 80%;
+	min-width: 300px;
+	padding-left: 10px;
+	margin-bottom: 20px !important;
+	border-radius: 5px;
+	text-align: left;
+}
+textarea {
+	min-height: 100px;
+	padding-top: 5px;
+}
+input:active, input:focus, textarea:focus, textarea:active{
+	outline: none;
+}
+.contact-btn {
+	border: none;
+	font-weight: bold;
+	border-radius: 5px;
+	outline: none;
+	width: 180px;
+	height: 50px;
+	margin-bottom: 40px;
+	color: #fff;
+	background: #fd7e14;
+	margin-top: 15px;
+	font-size: 22px;
+	&:hover {
+		transform: scale(1.2);
+		transition: 0.5s;
+	}
+}
+.media {
+	@include flexy;
+}
+.role {
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	border: 2px solid white;
+	@include flexy;
+	margin: 20px;
+	a {
+		display: block;
+		text-decoration: none;
+		i {
+			font-size: 28px;
+		}
+	}
+}
+.role:hover {
+	background: #fd7e14;
+	transform: scale(1.2);
+}
+.role:hover a i {
+	color: #fff;
+}
+
+.end {
+	position: relative;
+	width: 100%;
+	background: transparent;
+	color: #fff;
+	display: block;
+	font-size: 30px;
+	text-align: center;
+	padding: 30px;	
+	z-index: 2;
+} 
+
+@media (max-width: 800px) {
+	.name {
+		font-size: 80px;
+	}
+	.job {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 550px) {
+	.name {
+		font-size: 70px;
+	}
+	#contact {
+		a {
+			font-size: 15px;
+		}
+	}
+	footer {
+		font-size: 25px;
+	}
+}
+@media (max-width: 400px) {
+	.name {
+		font-size: 40px;
+	}
+	#contact {
+		a {
+			font-size: 14px;
+		}
+	}
+	footer {
+		font-size: 20px;
+	}
+}
+@media (max-width: 600px) {
+	.skill {
+		i {
+			font-size: 50px;
+		}
+		span {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	#projects {
+		.col-md-4 {
+			margin-top: 40px;
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 992px) {
+	.on-img {
+		font-size: 15px;
+	}
+	.tech {
+		font-size: 10px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.bar {
+		overflow: visible;
+	}
+	.menu {
+		width: 100%;
+		right: 0;
+		top: 10vh;
+		background: #f1f1f1;
+		overflow: hidden;
+		max-height: 0;
+		transition: all 1s ease-out;
+		a {
+			display: block;
+			text-align: center;
+			padding: 10px;
+			margin: 0;
+			background: #2c2c2c;
+		}
+	}
+	.guzik {
+		display: block;
+		cursor: pointer;
+	}
+	.show {
+		max-height: 500px;
+		transition: all 1s ease-in-out;
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
