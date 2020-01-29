@@ -8,6 +8,6 @@ function start() {
 
 		main.style.display = 'block';
 		main.style.opacity = 1;
-	}, 2000);
+	}, 1800);
 }
 start();

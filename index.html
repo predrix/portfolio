@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/preloader.css">
     <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -30,166 +30,200 @@
     <div class="main wow jackInTheBox" data-wow-delay="2s">
       <section class="bar">
         <div class="logo">My Portfolio</div>
-      	<a class="guzik">
-      		<span></span>
-      		<span></span>
-      		<span></span>
-      	</a>
+        <a class="ham">
+        	<div></div>
+        	<div></div>
+        	<div></div>
+        </a>
       	<div class="menu">
-      		<a href="#person">Home</a>
-      		<a href="#about-me">About</a>
-      		<a href="#projects">Projects</a>
-      		<a href="#skills">Skills</a>
-      		<a href="#contact">Contact</a>
+      		<a class="wrap" href="#person" data-filter="person">Home</a>
+      		<a class="wrap" href="#about-me" data-filter="about-me">About</a class="wrap">
+      		<a class="wrap" href="#projects" data-filter="projects">Projects</a class="wrap">
+      		<a class="wrap" href="#skills" data-filter="skills">Skills</a class="wrap">
+      		<a class="wrap" href="#contact" data-filter="contact">Contact</a class="wrap">
       	</div>
       </section>
-  	  <section id="person" class="person" data-index="0">
+  	  <section id="person" class="section person" data-index="0">
           <div class="my">
             <p class="name">Paweł Piórkowski</p>
             <p class="job">Junior Front-End Developer</p>
             <p class="cv">Here you can see my CV</p>
-            <button id="click"><a href="./Paweł_Piórkowski_CV.pdf">CLICK</a></button>
+            <button id="click"><a href="./Paweł_Piórkowski_CV.pdf" target="_blank">CLICK</a></button>
           </div>
       </section>
-      <section id="about-me">
-        <p class="black">About Me</p>
-        <img src="./images/ja.jpg" class="wow lightSpeedIn" data-wow-delay="0.3s">
+      <section id="about-me" class="section about-me">
+        <p class="title black wow fadeIn" style="color: black">About Me</p>
         <div class="container">
           <div class="row">
-            <div class="col-md-4">
-              <div class="package">
-                <i class="fas fa-table-tennis wow fadeIn" data-wow-delay="0.2s"></i>
-                <p class="desc wow rotateIn" data-wow-delay="0.5s">From the 4th grade of elementary school I played table tennis at the AZS AWFiS Gdańsk club. My biggest success was winning the junior team championship of the Pomeranian Voivodeship in 2005.</p>
+            <div class="col-lg-6 col-md-12">
+              <div class="about">
+                <div class="picture">
+                  <img class="fadeInLeft wow" data-wow-delay="0.5s" src="./images/paw.jpg">
+                </div>
+                <div class="line fadeInLeft wow"  data-wow-delay="0.8s"></div>
+                <div class="social-media">
+                  <a class="fadeInUp wow" data-wow-delay="1.2s" href="https://www.linkedin.com/in/pawelpior"><i class="fab fa-linkedin-in"></i></a>
+                  <a class="fadeInUp wow" data-wow-delay="1.3s" href="https://www.facebook.com/profile.php?id=100002219607633"><i class="fab fa-facebook-f"></i></a class="fadeInUp wow" data-wow-delay="0.8s">
+                  <a class="fadeInUp wow" data-wow-delay="1.4s" href="https://github.com/predrix?tab=repositories"><i class="fab fa-github"></i></a class="fadeInUp wow" data-wow-delay="0.8s">
+                </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="package">
-                <i class="fas fa-chess-knight wow fadeIn" data-wow-delay="0.2s"></i>
-                <p class="desc wow rotateIn" data-wow-delay="0.6s">I'm interested in politics and sport. In my free time I play board and team games or surf the internet. I took part in the "Harpagan" orientation rally several times.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="package">
-                <i class="fas fa-file-code wow fadeIn" data-wow-delay="0.2s"></i>
-                <p class="desc wow rotateIn" data-wow-delay="0.7s">Every day I try to learn something new and follow the highest front-end standards. Currently, I work as a freelancer while deepening my knowledge towards a full-stack developer.</p>
+            <div class="col-lg-6 col-md-12">
+              <div class="paragraph wow fadeInRight" data-wow-delay="0.5s">
+              Hello my name is Paweł. I am living and working in Gdańsk. From the 4th grade of elementary school I played table tennis at the AZS AWFiS Gdańsk club.
+               My biggest success was winning the junior team championship of the Pomeranian Voivodeship in 2005.
+               I'm interested in politics and sport. In my free time I play board and team games or surf the internet.
+                I took part in the "Harpagan" orientation rally several times. <br>
+                In 2018, I finished the 6-month "Web Developer" bootcamp which started my development career. Every day I try to learn something new and follow the highest front-end standards. 
+                 Currently, I work as a freelancer while deepening my knowledge towards a full-stack developer. I encourage you to look at some of my projects and repositories.
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="projects" class="projects" data-index="2">
-          <span class="title wow fadeIn" data-wow-delay="0.2">My Projects</span>
+      <section id="projects" class="section projects" data-index="2">
+          <p class="title wow fadeIn" data-wow-delay="0.2">My Projects</p>
           <div class="container">
             <div class="row">
-              <a href="podstrony/mogo/index.html" class="col-md-4 wow flipInX" data-wow-delay="0.4s">
-                <div class="pocket">
-                  <img class="img-fluid" alt="" src="./images/mogo.jpg">
-                  <div class="layer">
-                    <p class="on-img">MOGO TEMPLATE</p>
-                    <p class="tech">Html Css Bootstrap Js (first project)</p>
+              <div class="col-md-4 wow fadeIn" data-wow-delay="0.4s">
+                <a href="https://predrix.github.io/first-project/" target="_blank">
+                  <div class="pocket">
+                    <img class="img-fluid" alt="" src="./images/mogo.jpg">
+                    <div class="layer">
+                      <p class="on-img">FREE TEMPLATE</p>
+                      <p class="tech">Html Css Bootstrap Js (first project)</p>
+                    </div>
                   </div>
-                </div>
-              </a>
-              <a href="podstrony/steak/index.html" class="col-md-4 wow flipInX" data-wow-delay="0.5s">
-                <div class="pocket">
-                  <img class="img-fluid" alt="" src="./images/stek.jpg">
-                  <div class="layer">
-                    <p class="on-img">STEAK HOUSE</p>
-                    <p class="tech">Html Sass Bootstrap Js</p>
+                </a>
+                <a class="git-a" href="https://github.com/predrix/first-project" target="_blank"><i class="fab fa-github"></i>Code</a>
+                <p>The first project I was able to do based on a free template. I wrote a lot of css code without using a preprocessor which helped me progress.</p>
+              </div>
+              <div class="col-md-4 wow fadeIn" data-wow-delay="0.6s">
+                <a href="https://predrix.github.io/stek/" target="_blank">
+                  <div class="pocket">
+                    <img class="img-fluid" alt="" src="./images/stek.jpg">
+                    <div class="layer">
+                      <p class="on-img">STEAK HOUSE</p>
+                      <p class="tech">Html Sass Bootstrap Js</p>
+                    </div>
                   </div>
-                </div>
-              </a>
-              <a href="podstrony/search/index.html" class="col-md-4 wow flipInX" data-wow-delay="0.6s">
-                <div class="pocket">
-                  <img class="img-fluid" alt="" src="./images/1.jpg">
-                  <div class="layer">
-                    <p class="on-img">GIT HUB USSERS</p>
-                    <p class="tech">React</p>
+                </a>
+                <a class="git-a" href="https://github.com/predrix/stek" target="_blank"><i class="fab fa-github"></i>Code</a>
+                <p class="project-p">
+                  Restaurant page modeled on a free template. Written mainly for educational purposes.</p>
+              </div>
+              <div class="col-md-4 wow fadeIn"  data-wow-delay="0.8s">
+                <a href="podstrony/search/index.html" target="_blank">
+                  <div class="pocket">
+                    <img class="img-fluid" alt="" src="./images/1.jpg">
+                    <div class="layer">
+                      <p class="on-img">GIT HUB USSERS</p>
+                      <p class="tech">React</p>
+                    </div>
                   </div>
-                </div>
-              </a>
-             </div>
-             <div class="row" style="margin-top: 30px">
-               <a href="podstrony/rsp/index.html" class="col-md-4 wow flipInX" data-wow-delay="0.8s">
-                <div class="pocket">
-                  <img class="img-fluid" alt="" src="./images/rsp.jpg">
-                  <div class="layer">
-                    <p class="on-img">ROCK PAPER SCISSORS</p>
-                    <p class="tech">js(ES5)</p>
+                </a>
+                <a class="git-a" href="https://github.com/predrix/wyszukiwarka" target="_blank"><i class="fab fa-github"></i>Code</a>
+                <p class="project-p">First experience with React. The application searches for github users.</p class="project-p">
+              </div>
+            </div>
+            <div class="row" style="margin-top: 30px">
+              <div class="col-md-4 wow fadeIn" data-wow-delay="1s">
+                <a href="https://predrix.github.io/game-rsp/" target="_blank">
+                  <div class="pocket">
+                    <img class="img-fluid" alt="" src="./images/rsp.jpg">
+                    <div class="layer">
+                      <p class="on-img">ROCK PAPER SCISSORS</p>
+                      <p class="tech">js(ES5)</p>
+                    </div>
                   </div>
-                </div>
-              </a>
-              <a href="index.html" class="col-md-4 wow flipInX" data-wow-delay="0.9s">
-                <div class="pocket">
-                  <img class="img-fluid" alt="" src="./images/portfolio.jpg">
-                  <div class="layer">
-                    <p class="on-img">PORTFOLIO</p>
-                    <p class="tech">Html Css Bootstrap Sass Js</p>
+                </a>
+                <a class="git-a" href="https://github.com/predrix/game-rsp" target="_blank"><i class="fab fa-github"></i>Code</a>
+                <p class="project-p">A game written as exercises for learning javascript.</p>
+              </div>
+              <div class="col-md-4 wow fadeIn" data-wow-delay="1.2s">
+                <a href="index.html">
+                  <div class="pocket">
+                    <img class="img-fluid" alt="" src="./images/portfolio.jpg">
+                    <div class="layer">
+                      <p class="on-img">PORTFOLIO</p>
+                      <p class="tech">Html Css Bootstrap Sass Js</p>
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
+                <a class="git-a" href="https://github.com/predrix/portfolio" target="_blank"><i class="fab fa-github"></i>Code</a>
+                <p class="project-p">My portfolio personal. Design and written entirely by me.</p>
+              </div>
              </div>
           </div>
       </section>
-      <section id="skills" class="skills" data-index="3">
-          <p class="title" style="color: black">My Skills</p>
+      <section id="skills" class="section skills" data-wow-deley="0.1" data-index="3">
+          <p class="title wow fadeIn" style="color: black">My Skills</p>
           <div class="pack">
             <div class="box">
-              <h2 class="wow fadeIn" data-wow-delay="0.2">Intermediate</h2>
+              <h2 class="wow fadeIn" data-wow-delay="0.4s">Intermediate</h2>
               <div class="skill">
-                <span class="wow zoomIn" data-wow-delay="0.5s" data-wow-duration="1s">
+                <span class="wow zoomIn" data-wow-delay="0.7s" data-wow-duration="1s">
                   <i class="fab fa-html5"></i>
                   <p>HTML5</p>
                 </span>
-                <span class="wow zoomIn" data-wow-delay="0.6s" data-wow-duration="1s">
+                <span class="wow zoomIn" data-wow-delay="0.8s" data-wow-duration="1s">
                   <i class="fab fa-css3-alt"></i>
                   <p>CSS3</p>
                 </span>
-                <span class="wow zoomIn" data-wow-delay="0.7s" data-wow-duration="1s">
+                <span class="wow zoomIn" data-wow-delay="0.9s" data-wow-duration="1s">
                   <i class="fas fa-mobile-alt"></i>
                   <p>RWD</p>
+                </span>
               </div>
             </div>
             <div class="box">
-              <h2 class="wow fadeIn" data-wow-delay="0.8s">Basic</h2>
+              <h2 class="wow fadeIn" data-wow-delay="1s">Basic</h2>
               <div class="skill">
-                <span class="wow zoomIn" data-wow-delay="0.9s" data-wow-duration="1s">
+                <span class="wow zoomIn" data-wow-delay="1.1s" data-wow-duration="1s">
                   <i class="fab fa-js-square"></i>
                   <p>JS(ES6)</p>
                 </span>
-                <span class="wow zoomIn" data-wow-delay="1s" data-wow-duration="1s">
-                  <i class="fab fa-git"></i>
-                  <p>Git</p>
-                </span>
-                <span class="wow zoomIn" data-wow-delay="1.1s" data-wow-duration="1s">
+                <span class="wow zoomIn" data-wow-delay="1.3s" data-wow-duration="1s">
                   <i class="fab fa-react"></i>
                   <p>React</p>
                 </span>
-                <span class="wow zoomIn" data-wow-delay="1.2s" data-wow-duration="1s">
+                <span class="wow zoomIn" data-wow-delay="1.4s" data-wow-duration="1s">
                   <i class="fab fa-node"></i>
                   <p>Node.js</p>
+                </span>
+                <span class="wow zoomIn" data-wow-delay="1.4s" data-wow-duration="1s">
+                  <i class="fab fa-npm"></i>
+                  <p>Npm</p>
                 </span>
               </div>
             </div>
             <div class="box">
-              <h2 class="wow fadeIn" data-wow-delay="1.4s">Additional</h2>
+              <h2 class="wow fadeIn" data-wow-delay="1.5s">Additional</h2>
               <div class="skill">
-                <span class="wow zoomIn" data-wow-delay="1.5s" data-wow-duration="1s">
+                <span class="wow zoomIn" data-wow-delay="1.6s" data-wow-duration="1s">
                   <i class="fab fa-sass"></i>
                   <p>Sass</p>
                 </span>
-                <span class="wow zoomIn" data-wow-delay="1.6s" data-wow-duration="1s">
+                <span class="wow zoomIn" data-wow-delay="1.7s" data-wow-duration="1s">
                   <i class="fab fa-bootstrap"></i>
                   <p>Bootstrap</p>
+                </span>
+                <span class="wow zoomIn" data-wow-delay="1.7s" data-wow-duration="1s">
+                  <i class="fab fa-adobe"></i>
+                  <p>Photoshop</p>
+                </span>
+                <span class="wow zoomIn" data-wow-delay="1.9s" data-wow-duration="1s">
+                  <i class="fab fa-git"></i>
+                  <p>Git</p>
                 </span>
               </div>
             </div>
           </div>
       </section>
-      <section id="contact" class="contact" data-index="4">
+      <section id="contact" class="section contact" data-index="4">
           <div class="container">
             <div class="row">
-              <div class="col rellax" data-rellax-speed="7" data-rellax-percentage="0.5">
+              <div class="col rellax">
                 <p class="title">Contact Me</p>
                 <form method="post" name="contactform" action="mail.php">
                   <p class="what">NAME</p>
@@ -216,13 +250,11 @@
               </div>
             </div>
           </div>
-          <p class="end wow fadeIn" data-wow-delay="2s">Copyright All rights reserved.
-
-          Created with ❤️ by Predrix.
-
-            Have a nice day !!! </p>
         </section>
-      </div>
+        <footer  class="end">
+          Created with ❤️ by Predrix in 2020. Have a nice day !!!
+        </footer>
+      </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <script src="js/wow.min.js"></script>
@@ -230,5 +262,6 @@
     <script src="js/scroll.js"></script>
     <script src="js/rellax.min.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/wrapper.js"></script>
   </body>
 </html>
