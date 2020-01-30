@@ -1,13 +1,17 @@
 <?php
 
-$to      = 'ppawelpiorkowskii@gmail.com';
-$name    = $_POST['name'];
-$mail    = $_POST['mail'];
-$subject = 'Nowy e-mail od' . $name . '(' . $email . ')';
-$message = $_POST['message'];
-$headers = 'From: ' . $name . '(' . $email . ')';
-$headers = 'Content-Type: text/html: charsetutf-8\r\n';
+if (isset($_POST['submit'])) {
+	$name = $_POST['name'];
+	$subject = $_POST['subject'];
+	$mailFrom = $_POST['mail'];
+	$message = $_POST['message'];
 
-mail($to, $subject, $message, $headers)
+	$mailTo = "ppawelpiorkowskii@gmail.com";
+	$headers = "From: ".$mailFrom;
+	$txt = "Masz maila od: ".$name.".\n\n".$message;
+
+	mail($mailTo, $subject, $txt, $headers);
+	header("Location: index.php?mailsend");
+}
 
 ?>
