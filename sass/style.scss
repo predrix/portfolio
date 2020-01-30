@@ -288,7 +288,6 @@
 }
 .skill {
 	@include flexy;
-	flex-direction: column;
 	margin-bottom: 20px;
 	span {
 		margin-left: 30px;
@@ -539,9 +538,9 @@ input:active, input:focus, textarea:focus, textarea:active{
 		}
 	}
 	.skill {
-		flex-direction: column !important;
+		flex-direction: column;
 		i {
-			font-size: 40px;
+			font-size: 30px;
 		}
 		span {
 			margin-left: 10px;
@@ -550,14 +549,14 @@ input:active, input:focus, textarea:focus, textarea:active{
 		}
 	}
 }
-@media (max-width: 600px) {
+@media (max-width: 600px) and (min-width: 401px){
 	.skill {
 		i {
-			font-size: 50px;
+			font-size: 45px;
 		}
 		span {
-			margin-left: 20px;
-			margin-right: 20px;
+			margin-left: 10px;
+			margin-right: 10px;
 		}
 	}
 }
