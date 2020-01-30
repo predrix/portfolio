@@ -1,17 +1,15 @@
 <?php
 
-if (isset($_POST['submit'])) {
-	$name = $_POST['name'];
-	$subject = $_POST['subject'];
-	$mailFrom = $_POST['mail'];
+	$to      = 'mojapraca@interia.com';
+	$name    = $_POST['name'];
+	$email   = $_POST['email'];
+	$subject = 'Nowy e-mail od ' . $name . ' (' . $email . ')';
 	$message = $_POST['message'];
+	$headers = 'From: ' . $name . ' (' . $email . ')';
+	$headers .= 'Content-Type: text/html; charset=utf-8';
 
-	$mailTo = "mojapraca@interia.com";
-	$headers = "From: ".$mailFrom;
-	$txt = "Masz maila od: ".$name.".\n\n".$message;
+	mail($to, $subject, $message, $headers);
 
-	mail($mailTo, $subject, $txt, $headers);
-	header("Location: index.html");
-}
+	echo '<h1>Wiadomość wysłana :)</h1>'
 
 ?>
