@@ -415,6 +415,23 @@ input:active, input:focus, textarea:focus, textarea:active{
 } 
 
 /*==================== MEDIA =======================*/
+@media (min-width: 768px) and (max-width: 992px) {
+	.on-img {
+		font-size: 15px;
+	}
+	.tech {
+		font-size: 10px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.on-img {
+		font-size: 15px;
+	}
+	.tech {
+		font-size: 10px;
+	}
+}
 
 @media (max-width: 800px) and (min-width: 550px){
 	.name {
@@ -428,6 +445,40 @@ input:active, input:focus, textarea:focus, textarea:active{
 	.pocket:hover {
 		transform: scale(1.1);
 		transition: 0.5s;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.bar {
+		overflow: visible;
+	}
+	.menu {
+		width: 100%;
+		right: 0;
+		top: 10vh;
+		overflow: hidden;
+		max-height: 0;
+		transition: all 0.2s ease-out;
+		a {
+			display: block;
+			text-align: center;
+			padding: 10px;
+			margin: 0;
+			background: #2c2c2c;
+		}
+	}
+	.ham {
+		display: inline-block;
+		cursor: pointer;
+	}
+	.show {
+		max-height: 500px;
+		transition: all 1s ease-in-out;
+	}
+	#projects {
+		.col-md-4 {
+			margin-top: 40px;
+		}
 	}
 }
 
@@ -486,6 +537,17 @@ input:active, input:focus, textarea:focus, textarea:active{
 			font-size: 20px;
 		}
 	}
+	.skill {
+		flex-direction: column !important;
+		i {
+			font-size: 40px;
+		}
+		span {
+			margin-left: 10px;
+			margin-right: 10px;
+			;
+		}
+	}
 }
 @media (max-width: 600px) {
 	.skill {
@@ -499,53 +561,7 @@ input:active, input:focus, textarea:focus, textarea:active{
 	}
 }
 
-@media (max-width: 768px) {
-	#projects {
-		.col-md-4 {
-			margin-top: 40px;
-		}
-	}
-}
-@media (min-width: 768px) and (max-width: 992px) {
-	.on-img {
-		font-size: 15px;
-	}
-	.tech {
-		font-size: 10px;
-	}
-}
 
-@media only screen and (max-width: 768px) {
-	.bar {
-		overflow: visible;
-	}
-	.menu {
-		width: 100%;
-		right: 0;
-		top: 10vh;
-		overflow: hidden;
-		max-height: 0;
-		transition: all 0.2s ease-out;
-		a {
-			display: block;
-			text-align: center;
-			padding: 10px;
-			margin: 0;
-			background: #2c2c2c;
-		}
-	}
-	.ham {
-		display: inline-block;
-		cursor: pointer;
-	}
-	.show {
-		max-height: 500px;
-		transition: all 1s ease-in-out;
-	}
-}
-@media (max-width: 340px) {
-	
-}
 
 
 
