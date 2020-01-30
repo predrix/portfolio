@@ -288,10 +288,11 @@
 }
 .skill {
 	@include flexy;
+	flex-direction: column;
 	margin-bottom: 20px;
 	span {
-		margin-left: 40px;
-		margin-right: 40px;
+		margin-left: 30px;
+		margin-right: 30px;
 		p {
 			font-style: italic;
 		}
