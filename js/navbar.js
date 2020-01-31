@@ -5,7 +5,7 @@ $('.wrap').on('click', function() {
 	$('.menu').removeClass('show');
 });
 
-  (function() {
+(function() {
 	const chooseBtn = document.querySelectorAll('.wrap');
 	chooseBtn.forEach(function(btn) {
 	  btn.addEventListener('click', function(event){
@@ -22,4 +22,4 @@ $('.wrap').on('click', function() {
 		});
 	  });
 	});
-  })();
+})();
