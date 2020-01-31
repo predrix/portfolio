@@ -538,9 +538,9 @@ input:active, input:focus, textarea:focus, textarea:active{
 		}
 	}
 	.skill {
-		flex-direction: column;
+		flex-direction: column !important;
 		i {
-			font-size: 30px;
+			font-size: 40px;
 		}
 		span {
 			margin-left: 10px;
@@ -555,8 +555,11 @@ input:active, input:focus, textarea:focus, textarea:active{
 			font-size: 45px;
 		}
 		span {
-			margin-left: 10px;
-			margin-right: 10px;
+			margin-left: 20px;
+			margin-right: 20px;
+			p {
+				margin-bottom: 20px;
+			}
 		}
 	}
 }
