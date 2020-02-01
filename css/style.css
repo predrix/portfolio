@@ -50,7 +50,7 @@ img {
   font-family: 'Lato', sans-serif;
   text-align: center; }
 
-.about-me, .projects, .skills, .contact {
+.about-me, .projects, .skills, .contact, #footer {
   display: none; }
 
 .main {
@@ -110,7 +110,7 @@ img {
   background: url("../images/comp.jpg") no-repeat center center/cover fixed;
   color: #fff;
   position: relative;
-  min-height: 600px; }
+  height: 90vh; }
   #person .my {
     position: relative;
     z-index: 2;
@@ -234,13 +234,15 @@ img {
 
 #projects {
   background: #0E0E0E;
-  padding-bottom: 100px;
-  padding-top: 50px; }
-  #projects .container {
-    margin-top: 60px; }
-  #projects .title {
+  padding-bottom: 100px; }
+  #projects .title-projects {
     color: #fff;
-    margin-bottom: 60px !important; }
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 50px;
+    margin-bottom: 60px;
+    font-style: italic; }
   #projects .pocket:hover .layer {
     opacity: 0.9; }
   #projects .pocket {
