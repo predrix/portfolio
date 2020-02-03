@@ -99,7 +99,8 @@ img {
     font-size: 18px;
     font-style: italic;
     text-transform: uppercase;
-    display: inline-block; }
+    display: inline-block;
+    transition: 0.8s; }
     .menu a:hover {
       color: #fd7e14;
       text-decoration: none;
@@ -184,8 +185,8 @@ img {
     height: 3px; }
 
 .paragraph {
-  font-family: 'Bangers';
-  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
   text-align: left;
   margin-bottom: 40px;
   padding-top: 20px; }
@@ -456,6 +457,7 @@ input:active, input:focus, textarea:focus, textarea:active {
     top: 10vh;
     overflow: hidden;
     max-height: 0;
+    background: #2c2c2c;
     transition: all 0.2s ease-out; }
     .menu a {
       display: block;
