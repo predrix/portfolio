@@ -1,12 +1,12 @@
-$('.ham').on('click', function() {
-	$('.menu').toggleClass('show');
+$('.bar_hamburger').on('click', function() {
+	$('.bar_menu').toggleClass('show');
 });
-$('.wrap').on('click', function() {
-	$('.menu').removeClass('show');
+$('.bar_wrap').on('click', function() {
+	$('.bar_menu').removeClass('show');
 });
 
 (function() {
-	const chooseBtn = document.querySelectorAll('.wrap');
+	const chooseBtn = document.querySelectorAll('.bar_wrap');
 	chooseBtn.forEach(function(btn) {
 	  btn.addEventListener('click', function(event){
 		event.preventDefault();
