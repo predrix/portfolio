@@ -278,12 +278,12 @@ input:active, input:focus, textarea:focus, textarea:active{
 		width: 120px;
 		height: 40px;
 		color: #0066CC;
+		&:hover {
+			text-decoration: none;
+		}
 		i {
 			font-size: 30px;
 			margin-right: 15px;
-		}
-		&:hover i {
-			text-decoration: none;
 		}
 	}
 	&_description {
